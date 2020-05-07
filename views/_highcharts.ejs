@@ -74,9 +74,6 @@
         const highchartsInfo = "<%= highcharts.data %>".replace(/(\d,)/g, '$1,').split(',,');
         const splittedArr = highchartsInfo.map(el => el.split(",")).map(el => [ el[0], +el[1] ]);
 
-        console.log(splittedArr);
-
-
         Highcharts.chart('container', {
             chart: {
                 type: 'column'
